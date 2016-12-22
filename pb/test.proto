@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package pb;
+
+message BenchSmall {
+    string action = 1;
+    bytes key = 2;
+}
+
+message BenchMedium {
+    string name = 1;
+    int64 age = 2;
+    float height = 3;
+    double weight = 4;
+    bool alive = 5;
+    bytes desc = 6;
+}
+
+message BenchLarge {
+    string name = 1;
+    int64 age = 2;
+    float height = 3;
+    double weight = 4;
+    bool alive = 5;
+    bytes desc = 6;
+    string nickname = 7;
+    int64 num = 8;
+    float flt = 9;
+    double dbl = 10;
+    bool tru = 11;
+    bytes data = 12;
+}
